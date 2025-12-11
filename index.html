@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wake Up</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+      width: 100%;
+    }
+
+    .dream, .dark {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    /* Dream side: soft pastel gradient */
+    .dream {
+      background: linear-gradient(to bottom, #c3cfff, #fdd9f5);
+      color: #fff;
+    }
+
+    /* Glow behind button */
+    .dream .button {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #333;
+      padding: 20px 40px;
+      font-size: 1.5rem;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+      transition: transform 0.2s, box-shadow 0.2s;
+      z-index: 1;
+    }
+
+    .dream .button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
+    }
+
+    /* Dark side */
+    .dark {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .dark .button {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 20px 40px;
+      font-size: 1.5rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      z-index: 1;
+    }
+
+    .dark .button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .dream, .dark {
+        height: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="dream">
+      <a href="https://988lifeline.org/" target="_blank">
+        <button class="button">Wake Up</button>
+      </a>
+    </div>
+
+    <div class="dark">
+      <a href="https://v1ctorj05.github.io/Trapped-Inside/Trapped-Inside/sketch_251125b/" target="_blank">
+        <button class="button">Wake Up</button>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
